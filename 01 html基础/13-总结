@@ -1,0 +1,18 @@
+html
+1.网页设计：html+css+js
+2.html--》标签--》行内标签+块级标签
+3.块级标签：h 1~6 ；p；div；列表：ul ol dl
+4.行内标签：strong；em；img；a；span；
+5.table标签caption
+6.form表单
+    前后台交互
+    Ajax
+7.&lt；&gt；&nbsp；&emsp；
+
+1.<a href="https:www.baidu.com" title="">
+2.color:red;
+3.background:red url("") no-repeat ;
+4.MTV,MVC
+
+
+

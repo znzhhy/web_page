@@ -1,0 +1,32 @@
+css进阶
+1.盒子模型
+    A：盒子模型要牢记；
+    B：padding调整外部div内边距，它调整的是自身大小，所以如果不希望破坏外观，则尽量使用margin布局（padding有可能撑大外盒子，但如果是margin过大，则盒子内容会被挤出，但不会改变盒子本身大小）；
+    C：内部div和外部div定位时需要找到边界，外部div如没有设置border，则内部div的margin设置时会一直往上找，直到找到边界位置。
+    D：内部相邻div间的margin，取值为两个div各自设置margin的最大值，而不是相加值。
+
+2.css重置
+    *{
+        margin：0；
+        padding：0；
+    }
+
+3.浮动
+    A。文档流：你标签原本所在的位置
+    B。一列变一行：float：left；
+    C。高度塌陷：
+        清除浮动影响：
+            .clearfix::after{
+                display:block;
+                content:"";
+                clear:both;
+            }
+
+4.定位：
+    A。固定定位：fixed：相对于浏览器窗口进行的定位，脱离文档流的
+    B。相对定位：relative：相对自身进行定位，但发生偏移后，自身位置并未释放，不脱离文档流
+    C。绝对定位：absolue：相对于已定位父级或者浏览器进行定位，脱离文档流
+    D。应用：父相子绝
+
+5.补充：z-index：层级
+    谁大谁就在上面。

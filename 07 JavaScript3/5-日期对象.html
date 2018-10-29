@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //获取时间对象
+    var time=new Date();
+    //当前时间
+    console.log(time);
+    //时间戳
+    console.log(time.getTime());
+    //年月日时分秒,月+周
+    var year=time.getFullYear();
+    var mon=time.getMonth()+1;
+    var date=time.getDate();
+    var hour=time.getHours();
+    var min=time.getMinutes();
+    var sec=time.getSeconds();
+    mon=change(mon);
+    date=change(date);
+    hour=change(hour);
+    min=change(min);
+    sec=change(sec);
+
+    //数字补全
+    function change(n) {
+        n = "0"+n;
+        n = n.slice(-2);
+        return n;
+    }
+
+    //打印
+    console.log(year+"年"+mon+"月"+date+"日"+hour+"："+min+"："+sec);
+    //页面显示
+    document.body.innerText=year+"年"+mon+"月"+date+"日"+hour+"："+min+"："+sec;
+</script>
+</body>
+</html>

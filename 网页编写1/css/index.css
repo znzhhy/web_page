@@ -1,0 +1,77 @@
+/*====middle start====*/
+/*====con-left start====*/
+.middle .mid-con .con-left{
+    height:800px;
+    width:800px;
+    background: greenyellow;
+    float: left;
+}
+.middle .mid-con .con-right{
+    height:800px;
+    width:360px;
+    background: saddlebrown;
+    float: right;
+}
+/*====banner start====*/
+.middle .mid-con .con-left .banner{
+    height:200px;
+    width:800px;
+    background: #9595fb;
+    margin:20px auto;
+    position:relative;
+}
+.middle .mid-con .con-left .banner .pic img{
+    height:200px;
+    width:800px;
+    position:absolute;
+    display: none;
+}
+.middle .mid-con .con-left .banner .pic img.show{
+    display: block;
+}
+.middle .mid-con .con-left .banner .btn{
+    height:200px;
+    line-height: 200px;
+    font-size:50px;
+    color:white;
+    cursor: pointer;
+    display: none;
+}
+.middle .mid-con .con-left .banner:hover .btn{
+    display: block;
+}
+.middle .mid-con .con-left .banner .btn .left{
+    position:absolute;
+    left:10px;
+}
+.middle .mid-con .con-left .banner .btn .right{
+    position:absolute;
+    right:10px;
+}
+.middle .mid-con .con-left .banner .tab{
+    height:17px;
+    width:118px;
+    /*border:1px solid red;*/
+    position:absolute;
+    bottom: 10px;
+    /*left:341px;*/
+    left:50%;
+    margin-left:-59px;
+}
+.middle .mid-con .con-left .banner .tab li{
+    height:15px;
+    width:15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    float:left;
+    margin-left:10px;
+    cursor: pointer;
+}
+.active{
+    background: white;
+}
+/*====banner end====*/
+/*====con-left end====*/
+/*====con-right start====*/
+/*====con-right end====*/
+/*====middle end====*/

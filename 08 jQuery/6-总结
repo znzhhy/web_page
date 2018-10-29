@@ -1,0 +1,11 @@
+jq一
+1.jq：js封装
+    下载，https://www.bootcdn.cn/jquery/，复制
+2.选择器：css选择器：基本选择器+组合选择器
+  筛选器：1.first（）、last（）、eq（）；
+         2.children（），find（）
+         3.parent、parents、parentsUntil
+         4.siblings
+   简单应用是一样的，函数字符串拼接筛选器有优势
+3.属性操作：text、attr、toggleClass
+4.样式操作：css（{}）；

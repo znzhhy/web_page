@@ -1,0 +1,28 @@
+css入门
+1.css引入方式：
+    1.标签内style属性
+    2.head标签里的style标签去操作
+    3.head标签里面的link标签导入外部的css文件
+    4.三种导入方式遵循的是就近原则
+2.css选择器
+    基本选择器：
+        标签选择器：标签名   ：1
+        class选择器：.class名 ：10
+        id选择器:#id名     ：100
+        优先级：权重
+    组合选择器：
+    后代：目标的所有后代，包括儿子，孙子，曾孙
+    子代：目标的儿子
+    兄弟：后面的同级的标签
+    相邻：紧挨着的同级的标签
+
+    分组：不同的标签对象，具有相同样式时使用
+    伪类选择器：hover
+    全选择器：*
+
+3.操作
+    文字：font-size、weight、
+    文本：text-indent、上下居中（height+line-height）和左右居中（text-align）、去掉下划线（text-decoration）、省略号
+    背景：background：color image repeat position/size;
+
+

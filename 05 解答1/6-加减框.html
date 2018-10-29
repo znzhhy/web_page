@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加减框</title>
+</head>
+<body>
+<input type="button" value="-">
+<input type="text" placeholder="请输入数字" style="width:100px;">
+<input type="button" value="+">
+
+<script>
+    //获取对象
+    var obj=document.querySelectorAll("input");
+    obj[0].onclick=function () {
+        // console.log("-");
+        var num=obj[1].value;
+        // console.log(typeof num);//string
+        // console.log(num);
+        // var y=num--;//返回值num，num-1
+        // num-=1;
+        num=num-1;
+        obj[1].value=num;/*-*\/%会把数字类型的字符串直接当做数字处理*/
+    };
+    obj[2].onclick=function () {
+        // console.log("+");
+        var num = obj[1].value;
+        //num=num+1;//进行了字符串的拼接
+        num = Number(num);
+        // console.log(typeof num);
+        num = num + 1;
+        obj[1].value = num;
+    }
+</script>
+</body>
+</html>

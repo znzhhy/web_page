@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    div{
+        height: 200px;
+        width: 200px;
+        background: skyblue;
+        margin: 20px;
+        line-height: 200px;
+        text-align: center;
+    }
+    input{
+        text-indent: 1em;
+    }
+    </style>
+</head>
+<body>
+<!--需要完成：1.页面布局2.鼠标移入移出事件3，点击事件4.获取输入内容，修改目标样式-->
+    属&emsp;性：<input type="text" name="attr" placeholder="请输入css属性"><br>
+    属性值：<input type="text" name="attrv" placeholder="请输入css属性值"><br>
+    <input class="btn" type="button" value="点击获取内容">
+    <div>
+        我就是我
+    </div>
+<script>
+    //获取操作对象
+    var obj=document.querySelectorAll("input");
+    var box=document.querySelector("div");
+    //绑定事件
+        obj[2].onclick=function () {
+            var k = obj[0].value;
+            var v = obj[1].value;
+            box.style[k] = v;
+        };
+        //鼠标移入
+        box.onmouseenter=function () {
+            box.style.background="yellow";
+            box.style.color="skyblue"
+        };
+        //移出
+        box.onmouseleave=function () {
+            box.style.background="skyblue";
+            box.style.color="black";
+        };
+
+</script>
+</body>
+</html>

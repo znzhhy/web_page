@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <p><label for="test">用户名：</label><input id="test" type="text" name="usr" placeholder="请输入用户名" value="飞飞"></p>
+        <p>密&emsp;码：<input type="password" name="psw" placeholder="请输入密码"></p>
+        <p>
+            性&emsp;别：
+            <input type="radio" name="gender" value="man">男
+            <input type="radio" name="gender" value="woman">女
+            <input type="radio" name="gender" value="sex">保密
+        </p>
+        <p>
+            爱&emsp;好：
+            <input type="checkbox" name="hobby" value="swim">游泳
+            <input type="checkbox" name="hobby" value="sing">唱歌
+            <input type="checkbox" name="hobby" value="read">读书
+        </p>
+        <p>
+            文件上传：<input type="file">
+        </p>
+        <p>
+            <select>
+            <optgroup label="湖南省">
+                <option>长沙市</option>
+                <option selected>岳阳市</option>
+            </optgroup>
+            <optgroup label="湖北省">
+                <option>武汉市</option>
+                <option>黄陂市</option>
+            </optgroup>
+        </select>
+        </p>
+        <fieldset>
+            <p>
+                自我介绍：<textarea rows="10" cols="20"></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+        </p>
+
+    </form>
+</body>
+</html>

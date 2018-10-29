@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*组合选择器*/
+        /*后代选择器*/
+        /*目标元素的儿子孙子。。。*/
+        .parent p{
+            color:red;
+        }
+        /*子代选择器*/
+        .parent>p{
+            font-size:20px;
+        }
+        /*兄弟选择器*/
+        /*选择的是目标元素后面的同级div标签*/
+        .brother~div{
+            color:blue;
+        }
+        /*相邻选择器*/
+        /*选择的是目标元素后面的紧挨着的同级的标签*/
+        .brother+div{
+            font-size:50px;
+        }
+        /*全选择器*/
+         /**{*/
+           /*color:red;*/
+        /*}*/
+        /*分组选择器*/
+        .test1,.test2{
+            color:blueviolet;
+            font-size:30px;
+            font-weight: bold;
+        }
+        .test2{
+            background: skyblue;
+            height:100px;
+            width:100px;
+        }
+        /*.test2{*/
+            /*color:blueviolet;*/
+            /*font-size:30px;*/
+            /*font-weight: bold;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="test1">我是我</div>
+    <p class="test2">不一样的烟火</p>
+    <div class="parent">
+        <p>红豆生南国</p>
+        <p class="brother"><span>春来</span>发几枝</p>
+        <div>愿君多采撷
+        </div>
+        <div>
+            我是测试的
+            <p class="sun">
+                此物最相思
+            </p>
+        </div>
+    </div>
+</body>
+</html>

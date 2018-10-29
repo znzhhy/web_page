@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height:200px;
+            width:200px;
+            background: #9595fb;
+            position:absolute;
+        }
+    </style>
+</head>
+<body>
+    <button>animate</button>
+    <div></div>
+
+
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+    var $btn=$("button");
+    var $box=$("div");
+    $btn.click(function () {
+        $box.animate({"left":200});
+    });
+</script>
+</body>
+</html>

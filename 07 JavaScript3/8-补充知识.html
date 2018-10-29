@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //toString()、toFixed()、parseInt()、parseFloat()、Number()、isNaN（）、isArray()
+
+   var num=123.456;
+   //toString()
+    var b=num.toString();
+    console.log(typeof num);//number
+    console.log(b);
+    console.log(typeof b);//string
+
+    var num1=123.645;
+    //toFixed():不传参，四舍五入，取整；传参a，保留小数点后a位
+    var c=num1.toFixed();
+    console.log(c);
+    console.log(typeof c);//string
+    var d=num1.toFixed(2);
+    console.log(d);
+    console.log(typeof d);//string
+
+    //parseInt()、parseFloat()
+    //parseInt():整数，保留整数位，直到遇到不是数字停止
+    //parseFloat():浮点数，直到遇到不是数字停止
+    var x="12345.1B3";
+    var y="12b45.123";
+    console.log(parseInt(x));//12345
+    console.log(typeof parseInt(x));
+    console.log(parseInt(y));//12
+
+    console.log(parseFloat(x));//12345.1
+    console.log(parseFloat(y));//12
+
+    //Number
+    console.log(Number(x));//NaN
+    console.log(typeof Number(x));//number
+    console.log(c);//124
+    console.log(typeof c);//string
+    console.log(Number(c));
+
+    //isNaN（）:判断是否为not a number、
+    // isArray():判断是否为数组
+    console.log(isNaN(Number(x)));//true
+    console.log(isNaN(x));//true
+    console.log(isNaN(num));//false
+
+    var arr=[1,2,3];
+    // var b=new Array();
+    console.log(Array.isArray(arr));//true
+    console.log(Array.isArray(num));//false
+</script>
+</body>
+</html>

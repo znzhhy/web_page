@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="清除定时器">
+<script>
+    /*
+    //延时器setTimeout(f,毫秒)；
+    setTimeout(function () {
+        console.log("ok");
+    },1000);
+    //定时器
+    setInterval(function () {
+        console.log("ok");
+    },1000);
+    */
+    //简化
+    function f() {
+        console.log("ok");
+    }
+    var sT=setTimeout(f,1000);
+    var sI=setInterval(f,1000);
+    //清除延时器
+    clearTimeout(sT);
+    //清除定时器
+    var btn=document.querySelector("input");
+    btn.onclick=function () {
+        clearInterval(sI);
+    }
+</script>
+</body>
+</html>

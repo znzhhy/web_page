@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax:json+jq</title>
+    <style>
+        input{
+            width:50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ajax请求：json+jq</h1>
+    <input type="text" name="a">+
+    <input type="text" name="b">=
+    <input type="text" name="c">
+    <input type="button" value="计算">
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+    var $objs=$("input");
+    $objs.eq(3).click(function () {
+        var a=$objs.eq(0).val();
+        var b=$objs.eq(1).val();
+
+        //把数据通过ajax传送到后台
+        $.ajax({
+            "type":"post",
+            "url":"/index",
+            "data":{
+                "a":a,
+                "b":b
+            },
+            "success":function(return_data){
+                console.log(return_data);//{result: 46}
+                var res=return_data["result"];
+                $objs.eq(2).val(res);
+            }
+        });
+    });
+</script>
+</body>
+</html>

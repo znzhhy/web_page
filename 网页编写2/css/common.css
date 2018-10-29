@@ -1,0 +1,128 @@
+/*====top start====*/
+.top{
+    height:65px;
+    width:100%;
+    background: black;
+}
+.top .top-con{
+    height:65px;
+    width:1200px;
+    background: black;
+    margin: 0 auto;
+    line-height: 65px;
+    color:white;
+}
+.top .top-con .logo{
+    height: 100%;
+    width:236px;
+    background: url("https://www.python.org/static/img/python-logo.png") no-repeat 0 -6px;
+    float:left;
+    margin-right:60px;
+}
+.top .top-con .menu li{
+    float:left;
+    width:80px;
+    text-align: center;
+    height:65px;/*让下划线在盒子内部*/
+    box-sizing: border-box;/*让下划线在盒子内部*/
+}
+.top .top-con .menu li.show{
+    border-bottom: 3px solid greenyellow;
+    font-weight: bold;
+    background: #0e0e0e;
+}
+.top .top-con .menu li:hover{
+    border-bottom: 3px solid greenyellow;
+    font-weight: bold;
+    background: #0e0e0e;
+}
+.top .top-con .menu li a{
+    display: inline-block;
+    height:65px;
+    width:80px;
+    color:white;
+}
+.top .top-con .reg-log{
+    float:right;
+}
+.top .top-con .reg-log a{
+    color:white;
+}
+.top .top-con .reg-log span{
+    font-size: 20px;
+    vertical-align: middle;
+}
+/*====top end====*/
+
+/*====middle start====*/
+.middle{
+    /*height:800px;*/
+    width:100%;
+    background: #e8dede;
+}
+.middle .mid-con{
+    /*height:800px;*/
+    width:1200px;
+    /*background: #9595fb;*/
+    margin:0 auto;
+}
+/*====middle end====*/
+/*====bottom start====*/
+.bottom{
+    height:180px;
+    width: 100%;
+    background: #9595fb;
+}
+.bottom .bot1{
+    height: 120px;
+    width:100%;
+    background: #535e67;
+}
+.bottom .bot1 .bot1-con{
+    height: 120px;
+    width:1200px;
+    background: #535e67;
+    margin: 0 auto;
+    color: #c1c1c1;
+}
+.bottom .bot1 .bot1-con .logo{
+    height: 100%;
+    width:248px;
+    background: url("https://www.python.org/static/img/python-logo.png") no-repeat 0 20px;
+    float: left;
+    margin-right: 60px;
+}
+
+.bottom .bot1 .bot1-con p{
+    line-height: 30px;
+    text-align: center;
+}
+.bottom .bot1 .bot1-con .bot1-con-top{
+    /*margin-top:30px;*/
+    padding-top:30px;
+}
+.bottom .bot1 .bot1-con .bot1-con-top a{
+    color: #c1c1c1;
+}
+.bottom .bot1 .bot1-con .bot1-con-top>span,
+.bottom .bot1 .bot1-con .bot1-con-bottom>span {
+    margin-right:20px;
+}
+.bottom .bot2{
+    height:60px;
+    width: 100%;
+    background: black;
+}
+.bottom .bot2 .bot2-con{
+    height: 60px;
+    width:1200px;
+    background: black;
+    margin: 0 auto;
+}
+.bottom .bot2 .bot2-con p{
+    text-align: center;
+    color:#c1c1c1;
+    height:60px;
+    line-height: 60px;
+}
+/*====bottom end====*/

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var name="feifei";
+    function f() {
+        var name="飞飞";//函数内的变量只在该函数体内生效，超出函数范围是取不到的。
+        console.log("1:"+name);
+    }
+    console.log("2:"+name);
+    f();
+    console.log("3:"+name);
+
+
+<!--总结-->
+<!--函数创建，则作用域形成-->
+<!--函数没有调用，则内部代码不执行-->
+
+<!--函数的作用域就是函数本身。(作用范围在已经执行的函数内），一个函数只有一个作用域。-->
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            height:200px;
+            width:200px;
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+<!--style="background: yellow;color:red"-->
+    <div class="box">我就是我</div>
+<script>
+    var obj=document.querySelector(".box");
+    obj.onmouseenter=function () {
+        //单独样式设置
+        // obj.style.background="yellow";
+        // obj.innerText="不一样的烟火";
+        // obj.style.color="red";
+        //多个属性修改
+        // obj.style.cssText="background:yellow;color:red;";
+        //变量的样式修改
+        //单个样式
+        var k1="background";
+        var v1="yellow";
+        var k2="color";
+        var v2="red";
+        // obj.style[k1]=v1;
+        // obj.style[k2]=v2;
+        //多个样式
+        obj.style.cssText= k1+":"+v1+";"+k2+":"+v2+";"
+    };
+</script>
+</body>
+</html>

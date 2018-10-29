@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        th,td{
+            border:1px solid black;
+            width:50px;
+        }
+    </style>
+</head>
+<body>
+    <table style="border-collapse: collapse">
+        <caption>border边框</caption>
+        <thead>
+            <tr><th>名字</th><th>账号</th><th>考勤</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td colspan="2">2</td></tr>
+        <tr><td rowspan="2">1</td><td>2</td><td>3</td></tr>
+        <tr><td>2</td><td>3</td></tr>
+        </tbody>
+    </table>
+<!--<tbody></tbody>:加上此标签，表格的内容会在全部下载后才显现-->
+<!--<table></table>:在没有加上css样式时，在浏览器中是没有表格线的-->
+<!--<th></th>:表头默认为粗体，居中-->
+</body>
+</html>

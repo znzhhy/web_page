@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        var name="柠檬";
+        //if
+        if(name){
+            console.log(name+"好酸");
+        }
+        //简化写法
+        if(name)console.log(name+"好酸");
+
+        //if...else...
+        if(name==="柠檬"){
+            console.log(name+"好酸");
+        }else{
+            console.log(name);
+        }
+        //三目运算
+        name==="ningmeng"?console.log(name+"好酸"):console.log(name);
+
+        //多层嵌套
+        var num=5;
+        var str="5";
+        if(num===str){
+            console.log("我是全等");
+        }else if(num==str){
+            console.log("我们是相等的");
+        }else if(num){
+            console.log(num);
+        }else{
+            console.log("error");
+        }
+
+        //switch
+        switch(num){
+            case "5":
+                console.log(num);
+                break;
+            case 5:
+                console.log("第2:"+5);
+                break;
+            case 6:
+                console.log(6);
+                break;
+            default:
+                console.log("error");
+                break;
+        }
+    </script>
+</body>
+</html>

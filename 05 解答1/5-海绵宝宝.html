@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会变脸的海绵宝宝</title>
+    <style>
+        .box{
+            width:350px;
+            height:350px;
+            background:url("img/psb.jpg") no-repeat;
+        }
+        .btn{
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="btn">
+        <input type="button" value="上">
+        <input type="button" value="右">
+        <input type="button" value="下">
+        <input type="button" value="左">
+    </div>
+
+    <script>
+        //获取对象
+        var box=document.querySelector(".box");
+        var btn=document.querySelectorAll(".btn>input");
+        btn[0].onclick=function () {
+            // console.log("上");
+            box.style.backgroundPosition="0px 0px";
+        };
+        btn[1].onclick=function () {
+            // console.log("右");
+            box.style.backgroundPosition="-350px -350px";
+        };
+        btn[2].onclick=function () {
+            // console.log("下");
+            //    x没变为0y-350；
+            // box.style.backgroundPosition="0px -350px";
+            box.style.backgroundPositionX="0px";
+            box.style.backgroundPositionY="-350px";
+
+        };
+        btn[3].onclick=function () {
+            // console.log("左");
+            box.style.backgroundPosition="-350px 0px";
+        };
+    </script>
+</body>
+</html>

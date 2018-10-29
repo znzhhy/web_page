@@ -1,0 +1,56 @@
+/*====login start====*/
+.middle .mid-con .mid-con-mid{
+    height:380px;
+    width:480px;
+    background: white;
+    margin:30px auto;
+}
+.middle .mid-con .mid-con-mid .con-top{
+    height:50px;
+    line-height: 50px;
+    width:440px;
+    border-bottom: 1px solid gray;
+    margin-left: 20px;
+}
+.middle .mid-con .mid-con-mid .con-top h3{
+    float:left;
+    border-bottom: 3px solid blueviolet;
+    box-sizing: border-box;
+    height:50px;
+}
+.middle .mid-con .mid-con-mid .con-top a{
+    float:right;
+    text-decoration: none;
+}
+.middle .mid-con .mid-con-mid .regist-con{
+    margin-left: 20px;
+}
+.middle .mid-con .mid-con-mid .regist-con form>input{
+    height:50px;
+    width:440px;
+    margin-top: 20px;
+    font-size: 20px;
+    /*text-indent: 1em;*/
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.middle .mid-con .mid-con-mid .regist-con .rem{
+    /*height:50px;*/
+    width:440px;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 50px;
+}
+.middle .mid-con .mid-con-mid .regist-con .rem input{
+    float:left;
+    line-height: 50px;
+    height:50px;
+    vertical-align: middle;
+}
+.middle .mid-con .mid-con-mid .regist-con .rem a{
+    float:right;
+}
+.middle .mid-con .mid-con-mid .regist-con form .btn{
+    background: skyblue;
+}
+/*====login end====*/

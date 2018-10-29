@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>足球</li>
+    <li>篮球</li>
+    <li>乒乓球</li>
+</ul>
+
+ul>li*4
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script>
+        //简单操作:效果一样
+        //选择器
+        // $("li:eq(2)").css("color","red");
+        //筛选器
+        // $("li").eq(2).css("fontSize","30px");
+
+        //函数操作
+        function f(obj,index){
+            obj.eq(index).css("fontSize","30px");
+            //$("li:eq(2)").css("color","red");
+        }
+        f($("li"),2);
+        <!--总结-->
+        <!--简单操作时，效果是一样的-->
+        <!--但是在函数中操作时，筛选器在字符拼接上有优势-->
+
+    </script>
+</body>
+</html>

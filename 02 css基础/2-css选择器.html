@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #hh1{
+            font-weight: bold;
+            /*color:green;*/
+        }
+        /*基本选择器*/
+        /*标签选择器*/
+        /*权重值：1*/
+        p{
+            color: skyblue;
+        }
+        /*class选择器*/
+        /*可以有多个同名的class*/
+        /*权重值：10*/
+        .test{
+            font-size:20px;
+            color:red;
+        }
+        /*id选择器*/
+        /*必须是唯一，不能同名*/
+        /*权重值：100*/
+        #hh{
+            color: red;
+        }
+
+        /*组合选择器*/
+    </style>
+</head>
+<body>
+
+    <p class="test" id="hh1">无言独上西楼月如钩</p>
+    <p id="hh">寂寞梧桐深院锁清秋</p>
+    <p class="test">剪不断理还乱是离愁</p>
+    <p>别是一般滋味在心头</p>
+<!--id选择器>class选择器的样式>标签选择-->
+</body>
+</html>

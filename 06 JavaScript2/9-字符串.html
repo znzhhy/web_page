@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //创建字符串
+        var str="hello Fei Fei!!";
+        //length:长度，包括空格
+        console.log(str.length);//14
+        //字符读取:下标
+        console.log(str[4]);//o
+        //字符不能通过下标修改：
+        str[4]="6";
+        console.log(str[4]);//0
+
+        //indexOf():通过字符或者字符串去查找索引/下标
+        console.log(str.indexOf("o"));//4
+        console.log(str.indexOf("ei"));//7,返回第一个找到的索引
+        console.log(str.indexOf("ei",8));//10,第二个参数指定的是开始查找的下标
+        console.log(str.indexOf("o",5));//-1,没有成功查找到的时候返回-1
+
+        //split()切割:字符串通过某个指定的元素分割成一个数组
+        console.log(str.split(" "));//["hello", "Fei", "Fei!!"]
+
+        //切片（截取）：substring();slice()
+        //substring:包前不包后;自动比较，把小的参数放前面;负数变为0
+        console.log(str);
+        console.log(str.substring(1,7));//ello F
+        console.log(str.substring(7,1));//ello F
+        console.log(str.substring(7,-1));//hello F
+        //单参数：截取当前序列到末尾的字符串
+        console.log(str.substring(7));
+
+        //slice():包前不包后;数字不会自动进行转换，必须是前小后大；负数表示从右往左数
+        console.log(str);
+        console.log(str.slice(1,7));//ello F
+        console.log(str.slice(7,1));//空
+        console.log(str.slice(7,-1));//ei Fei!
+
+        //单参数：截取当前序列到末尾的字符串
+        console.log(str.slice(7));//ei Fei!!
+        console.log(str.slice(-2));//!!
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            list-style: none;
+        }
+        div{
+            height:200px;
+            width:800px;
+            background: #9595fb;
+            margin: 20px auto;
+            position:relative;
+        }
+        img{
+            height:200px;
+            width:800px;
+            position:absolute;
+        }
+        .btn{
+            height:200px;
+            font-size:50px;
+            line-height: 200px;
+            color:white;
+            display: none;
+        }
+        div:hover .btn{
+            display: block;
+        }
+        .btn .left{
+            position:absolute;
+            left:15px;
+        }
+        .btn .right{
+            position:absolute;
+            right:15px;
+        }
+        .tab{
+            height:17px;
+            width:118px;
+            /*border:1px solid red;*/
+            position:absolute;
+            bottom:10px;
+            left:50%;
+            margin-left:-59px;
+        }
+        .tab li{
+            height:15px;
+            width:15px;
+            border:1px solid white;
+            float:left;
+            border-radius: 50%;
+            margin-left:10px;
+        }
+        .tab li:hover{
+            background: white;
+        }
+    </style>
+</head>
+<body>
+   <div>
+       <ul class="pic">
+           <li><img src="https://res.shiguangkey.com//file/201806/19/20180619142252602590185.jpg">
+</li>
+           <li><img src="https://res.shiguangkey.com//file/201806/19/20180619141337485823895.jpg">
+</li>
+           <li><img src="https://res.shiguangkey.com//file/201806/21/20180621150342030454625.jpg"
+></li>
+           <li><img src="https://res.shiguangkey.com//file/201805/17/20180517113424433990524.jpg"></li>
+       </ul>
+       <ul class="btn">
+           <li class="left">&lt;</li>
+           <li class="right">&gt;</li>
+       </ul>
+       <ul class="tab">
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+       </ul>
+   </div>
+</body>
+</html>

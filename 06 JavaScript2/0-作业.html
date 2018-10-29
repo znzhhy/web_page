@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /**{*/
+            /*margin:0;*/
+            /*padding:0;*/
+        /*}*/
+        div{
+            height:200px;
+            width:200px;
+            background:skyblue;
+            line-height:200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <p>
+       样式名：<input type="text" name="attr" placeholder="请输入样式名">
+       <select>
+           <optgroup label="样式选择">
+               <option value="color">字体颜色</option>
+               <option value="background">背景颜色</option>
+               <option value="fontFamily">字体</option>
+           </optgroup>
+       </select>
+   </p>
+   <p>
+       样式值：<input type="text" name="attrV" placeholder="请输入样式值">
+       <select>
+           <optgroup label="颜色选择">
+               <option value="yellow">黄色</option>
+               <option value="red">红色</option>
+               <option value="green">绿色</option>
+           </optgroup>
+           <optgroup label="字体选择">
+               <option value="Microsoft YaHei">雅黑</option>
+               <option value="华文楷体">楷体</option>
+               <option value="华文中宋">中宋</option>
+           </optgroup>
+       </select>
+   </p>
+    <p>
+        <input type="button" value="设置">
+    </p>
+    <div>
+        我就是我
+    </div>
+
+<script>
+   //获取操作对象
+   var obj=document.querySelectorAll("input");
+   var box=document.querySelector("div");
+   var sel=document.querySelectorAll("select");
+   //绑定事件
+    obj[2].onclick=function () {
+        var k=obj[0].value;
+        var v=obj[1].value;
+        // console.log(k);
+        box.style[k]=v;
+        // box.style.cssText=k+":"+v;
+    };
+    sel[0].onchange=function () {
+        // console.log(sel[0].value);
+        obj[0].value=sel[0].value;
+    };
+    sel[1].onchange=function () {
+       obj[1].value=sel[1].value;
+    }
+</script>
+</body>
+</html>

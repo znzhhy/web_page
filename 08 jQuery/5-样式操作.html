@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .out{
+            height:200px;
+            width:200px;
+            background: #9595fb;
+            position:relative;
+        }
+        .inn{
+            height:100px;
+            width:100px;
+            background: #e8dede;
+            position:absolute;
+            top:20px;
+            left:20px;
+        }
+        .test{
+            width:100px;
+            height:100px;
+            background: skyblue;
+            margin-top:20px;
+            overflow: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>我就是我</p>
+    <div class="out">
+        <div class="inn">偏移测试</div>
+    </div>
+
+    <div class="test">
+        柠檬大佬 今天也沉默了柠檬大佬 今天也沉默了柠檬大佬 今天也沉默了柠檬大佬 今天也沉默了柠檬大佬 今天也沉默了柠檬大佬 今天也沉默了柠檬大佬 今天也沉默了柠檬大佬 今天也沉默了
+    </div>
+    <input type="button" value="获取">
+    <input type="button" value="设置">
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+    //单个样式操作
+   $("p").css("color","red");
+   //多个样式操作
+    $("p").css({
+        "background":"red",
+        "color":"blue",
+        "fontSize":"30px",
+        "border":"3px solid black"
+    });
+
+    //位置操作：
+    //offset()、position()
+    //position():距离定位父级top和left值
+    var $obj=$(".inn");
+    console.log($obj.position());//{top: 20, left: 20}
+    console.log($obj.position().left);//20
+    console.log($obj.position().top);//20
+
+    //offset():距离窗口的top和left值
+    console.log($obj.offset());//{top: 126, left: 28}
+    console.log($obj.offset().left);//28
+    console.log($obj.offset().top);//126
+
+    //scrollTop（）:浏览器竖直方向的滚动条、scrollLeft（）：下方滚动条
+    //scrollTop（）:滚动条距离顶部的距离
+    //不传参获取，传参是修改
+    $("input").eq(0).click(function () {
+        console.log($(".test").scrollTop());
+        console.log($(".test").height());
+        console.log($(".test").width());
+
+    });
+    $("input").eq(1).click(function () {
+        $(".test").scrollTop(50);
+        $(".test").height(200);
+        $(".test").width(200);
+    });
+
+    //height()、width()
+    //不传参获取，传参是修改
+
+</script>
+</body>
+</html>

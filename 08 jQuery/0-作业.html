@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .ti{
+            font-size:30px;
+            color:red;
+        }
+        .test{
+            color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h3>敌军还有<span class="ti">5</span>秒到达战场</h3>
+    <h3>现在是北京时间:<span class="da"></span></h3>
+<script>
+    var obj=document.querySelector(".ti");//获取倒计时的对象
+    var time=obj.innerText;
+    var obj1=document.querySelector("h3");
+    var obj2=document.querySelector(".da");
+    // console.log(time);
+    //实现数字减少
+    function f() {
+        if(time==0){
+            clearInterval(SI);
+            obj1.innerText="全军出击";
+        }
+        time-=1;
+        obj.innerText=time;
+    }
+    var SI=setInterval(f,1000);
+
+    //现在
+    //获取当前时间的函数
+    function f1() {
+        //获取时间对象
+        var time=new Date();
+        //当前时间
+        // console.log(time);
+        //时间戳
+        // console.log(time.getTime());
+        //年月日时分秒,月+周
+        var year=time.getFullYear();
+        var mon=time.getMonth()+1;
+        var date=time.getDate();
+        var hour=time.getHours();
+        var min=time.getMinutes();
+        var sec=time.getSeconds();
+        mon=change(mon);
+        date=change(date);
+        hour=change(hour);
+        min=change(min);
+        sec=change(sec);
+
+        //数字补全
+        function change(n) {
+            n = "0"+n;
+            n = n.slice(-2);
+            return n;
+        }
+     obj2.innerHTML=year+"<span class='test'>年</span>"+mon+"<span class='test'>月</span>"+date+"<span class='test'>日</span>"+hour+"<span class='test'>:</span>"+min+"<span class='test'>:</span>"+sec;
+    }
+    f1();
+    setInterval(f1,1000);
+</script>
+</body>
+</html>

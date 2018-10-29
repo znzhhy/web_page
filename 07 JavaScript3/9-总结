@@ -1,0 +1,30 @@
+js三
+1.Math对象
+    随机数：random（）
+    取整：round（）：四舍五入取整
+          floor（）：向下取整
+          ceil（）：向上取整
+2.函数
+    定义函数
+    有名函数+（）
+    匿名函数+（（），+，-，！，~）==》函数表达式+（）===》实现匿名函数的自执行
+     函数参数：多变量arguments
+     函数返回值：return
+
+     函数提前声明：函数在定义未执行阶段，先去定义变量，但未赋值
+     函数作用域：函数体内的变量只在函数体内生效，外部是拿不到
+
+3.日期对象
+
+4.定时器
+    setTimeout（f，毫秒）：延迟时间去执行，函数只执行一次
+    setInterval（f，毫秒）；每隔时间去执行函数
+清除定时器
+定时器命名
+    var ST=setTimeout（f，毫秒）
+    clearTimeout（ST）；
+    var SI=setInterval（f，毫秒）
+    clearInterval（SI）；
+
+5.toString()、toFixed()、parseInt()、parseFloat()、Number()、isNaN（）、isArray()
+

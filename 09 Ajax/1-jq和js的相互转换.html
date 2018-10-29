@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>元素一</div>
+    <div>元素二</div>
+    <div>元素三</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+    //jq-->js
+    //1.jq对象加上数组下标---》js对象
+    var $box=$("div");//获取jq对象
+    $box.css("color","red");//jq的样式修改方式
+    var box= $box[0];//转换为js对象
+    box.style.color="green";//js样式修改方法
+
+    //2.jq自带get方法
+    var $box1=$("div");//获取jq对象
+    var box1=$box1.get(1);//转换为js对象
+    box1.style.color="skyblue";//js样式修改方法
+
+    //js-->jq：
+    var div=document.getElementsByTagName("div");//js对象
+    var $div=$(div);//转换为jq对象
+    $div.eq(2).text("haha");
+</script>
+</body>
+</html>

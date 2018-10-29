@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        //数组创建方法
+        var a=[1,2,3,4];
+        var b=new Array();
+        //操作
+        //length:
+        console.log(a.length);//4
+        //读+写
+        console.log(a[2]);//3
+        a[2]="x";
+        console.log(a[2]);//x
+        //后加:push(),单加或多个都是ok的
+        a.push("a");
+        a.push("b","c");
+        console.log(a);
+        //前加：unshift();
+        a.unshift("a");
+        a.unshift("b","c");
+        console.log(a);
+
+        //删后面一个：pop（）
+        a.pop();
+        console.log(a);
+        //删前面：shift（）；
+        a.shift();
+        console.log(a);
+
+        //splice():
+        var arr=["a","b","c","d"];
+        //传一个参数x:数组从0开始截取x位
+        // arr.splice(2);
+        console.log(arr);//["a", "b"]
+
+        //传两个参数x，y,表示数组从x下标开始删除y位
+        // arr.splice(1,2);
+        console.log(arr);//["a", "d"]
+
+        //传三个参数先，x,y,z,表示数组从x下标开始删除y位,同时填入z
+        arr.splice(1,2,"e","f","g");
+        console.log(arr);
+
+        //join:拼接
+        var str=arr.join("/");
+        console.log(str);
+
+        //排序
+        var arr1=[0,-1,5,-4,8];
+        console.log(arr1.sort());//ASCII码排序
+        console.log(arr1.reverse());//ASCII码排序
+
+        //数学排序
+        arr1.sort(function (x, y) {
+            // return x-y;//正向
+            return y-x;
+        });
+        console.log(arr1);
+    </script>
+</body>
+</html>

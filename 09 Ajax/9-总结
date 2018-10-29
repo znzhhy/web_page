@@ -1,0 +1,19 @@
+ajax
+1.json：创建+可读可写+和字符串的相互转换+遍历
+2.form表单实现前后台的交互
+3.ajax实现前后台的交互：$.ajax({});
+4.js和jq的相互转换：js--->jq：$(js)
+                   jq--->js: a.$jq.get(index)
+                             b. $jq[index]
+5.this:js对象
+    jq对象：$(this)
+
+6.$.each($objs,function(i,obj){})
+  $.each($objs,function(){this})
+
+7.动画:$obj.方法（）
+hide（）、show（）、toggle（）
+fadeIn（）、fadeOut()、fadeToggle（）、fadeTo（）
+slideDown（）、slideUp（）、slideToggle（）
+stop（）
+animate（）

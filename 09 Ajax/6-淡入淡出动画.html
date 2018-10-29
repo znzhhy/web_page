@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height:100px;
+            width:100px;
+            background: brown;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div></div>
+   <div></div>
+   <div></div>
+
+   <button>fadeTo</button>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+    //fadeTo()
+    var $btn=$("button");
+    var $box=$("div");
+    $btn.click(function () {
+        $box.eq(0).fadeTo(3000,0.15);
+        $box.eq(1).fadeTo(3000,0.4);
+        $box.eq(2).fadeTo(3000,0.7);
+    });
+</script>
+</body>
+</html>

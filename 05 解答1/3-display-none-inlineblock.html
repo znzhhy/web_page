@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*div{*/
+            /*height:100px;*/
+            /*width:200px;*/
+            /*background: #9595fb;*/
+            /*margin-bottom:20px;*/
+        /*}*/
+        /*.test{*/
+            /*height:200px;*/
+        /*}*/
+        .out{
+            height:200px;
+            width:200px;
+            background: #9595fb;
+        }
+        .inn{
+            height:100px;
+            width:100px;
+            background: skyblue;
+            display: none;/*隐藏*/
+        }
+        .out:hover .inn{
+            display: block;/*块级元素*/
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="test"></div>-->
+    <!--<div></div>-->
+    <div class="out">
+        <div class="inn">我就是我</div>
+    </div>
+</body>
+</html>

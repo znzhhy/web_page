@@ -1,0 +1,33 @@
+js一
+1.js基本使用
+    <script>一定要记住放在body结束标签之前
+    导入外部js文件的script标签里不要再写js代码
+2.获取元素对象
+    //1.标签
+    var obj1=document.getElementsByTagName("p");//数组、列表
+    console.log(obj1[0]);
+    //2.class
+    var obj2=document.getElementsByClassName("test");
+    console.log(obj2[0]);
+    //3.id
+    var obj3=document.getElementById("test1");
+    console.log(obj3);
+    //4.css选择器
+    var obj4=document.querySelector("p");
+    var obj5=document.querySelector(".test");
+    var obj6=document.querySelector("#test1");
+    console.log(obj4);
+    console.log(obj5);
+    console.log(obj6);
+    //5.name
+    var inp=document.getElementsByName("ff");
+    console.log(inp[0]);
+    var val = inp[0].value;
+    console.log(val);
+3.操作对象
+    事件：点击事件，鼠标移入移出事件
+    样式操作：
+    属性操作：合法属性+自定义属性：增删改查
+    数据类型：数字，布尔，null，undefind，字符串，object
+4.补充
+    document.querySelectorAll("**");//获取全部，通过下标，分别操作    

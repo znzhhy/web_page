@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  //算术运算符有 ：+  、-  、 *  、 /  、 %、++、--
+    //数和数
+    //数和字符的运算
+    var num=5;
+    var str="2";
+    console.log(num+str);//52,字符串的拼接
+    console.log(num-str);//3
+    console.log(num*str);//10
+    console.log(num/str);//2.5
+    console.log(num%str);//1
+
+    //特殊数据
+    console.log(num+true);//6
+    console.log(num-false);//5
+    console.log(num+null);//5
+    console.log(num+undefined);//NaN
+
+    //++,--
+    //自增
+    var num1=5;
+    console.log(num1);//5
+    var y=num1++;//先将num1值返回，再自增1
+    console.log(y);//5
+    console.log(num1);//6
+
+    console.log(num1);//6
+    y = ++num1;//先自增1，再将num1值返回
+    console.log(y);//7
+    console.log(num1);//7
+
+    //自减
+    console.log(num1);//7
+    y = num1--;//先返回num1值，再自减
+    console.log(y);//7
+    console.log(num1);//6
+
+    console.log(num1);//6
+    y = --num1;//先自减，再返回num1的值
+    console.log(y);//5
+    console.log(num1);//5
+</script>
+</body>
+</html>

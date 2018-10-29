@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!--<p class="test" id="te">我就是我</p>-->
+    <div>元素一</div>
+    <div class="tar">元素二</div>
+    <div>元素三</div>
+
+    <!--<div class="out">-->
+        <!--<span>无</span><br>-->
+        <!--<span class="test1">有</span><br>-->
+        <!--<p>无</p>-->
+        <!--<p class="test1">有</p>-->
+        <!--<div>无</div>-->
+        <!--<div class="test1">有</div>-->
+    <!--</div>-->
+
+    <!--<div class="div1">div1-->
+        <!--<div class="div2">div2-->
+            <!--<div class="div3">div3-->
+                <!--<div class="div4">div4-->
+                    <!--<div class="div5">div5-->
+                        <!--<div class="div6">div6-->
+                            <!--<div class="div7">div7</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script>
+        /*
+        //选择器
+       //标签选择器
+        console.log($("p").text());
+        //class选择器
+        $(".test").css("color","skyblue");
+        //id选择器
+        $("#te").css("fontSize","30px");
+        //组合选择器
+*/
+        //筛选器
+        /*
+        //一：first(),last(),eq()
+        $("div").first().css("color","red");
+        $("div").last().text("哈哈哈");
+        $("div").eq(1).css("color","blue");
+        */
+        /*
+        //二、children（）、find（）
+        //找到$(".out")的所有子元素
+        $(".out").children().css("color","red");
+        //找到$(".out")的具有(".test1")的子元素
+        $(".out").children(".test1").css("color","blue");
+        //find():必须含参==children（）含参
+        $(".out").find(".test1").css("fontSize","30px");
+        */
+
+        /*
+        //三、parent()、parents（）、parentsUntil（）
+        //parent():唯一父级及全部后代
+        $(".div5").parent().css("color","red");
+        //parents():全部的祖先元素和全部的后代元素
+        $(".div5").parents().css("fontSize","30px");
+        //parentsUntil():全部的祖先元素和全部的后代元素(除掉后面指定的元素以及他之前的祖先元素）
+        $(".div5").parentsUntil(".div2").css("color","green");
+*/
+        //四、siblings():同级除自身外的其他元素
+        $(".tar").siblings().css("color","red");
+
+        //html:<!--注释内容-->
+        //css:/*注释内容*/
+        //js://单行注释；/*多行注释*/
+        //ctrl+/
+    </script>
+</body>
+</html>

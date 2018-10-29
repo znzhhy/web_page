@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .test{
+            color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <p>我就是我</p>
+    <!--<input type="text" name="usr" placeholder="请输入用户名"><br>-->
+    <!--<input type="button" value="点击获取值">-->
+
+    <input type="button" value="add">
+    <input type="button" value="remove">
+    <input type="button" value="toggle">
+
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+    //可分为三类，1.text（)、html()、val（）；2.attr()、removeAttr()；3.addClass（）、removeClas（）、toggleClass（）
+    /*
+    //1.text（)、html()、val（）:不传参是获取值，传参就是修改值
+    console.log($("p").text());
+    $("p").text("我");
+    $("p").html("<span>haha</span>wo");
+
+    $("input").eq(1).click(function () {
+        var val=$("input").first().val();
+        console.log(val);
+    });
+*/
+    /*
+    //2.attr()、removeAttr():增删改查
+    //增：无则增
+    $("p").attr("con","haha");//自定义属性
+    $("p").attr("class","test");//合法属性
+
+    //查
+    console.log($("p").attr("con"));//自定义属性
+    console.log($("p").attr("class"));//合法属性
+
+    //改：有则改
+    $("p").attr("con","xixi");//自定义属性
+    $("p").attr("class","test1");//合法属性
+
+    //删
+    $("p").removeAttr("con");//自定义属性
+    $("p").removeAttr("class");//合法属性
+*/
+    //3.addClass（）、removeClass、toggleClass();
+    var $btn=$("input");
+    $btn.eq(0).click(function () {
+        // console.log("add");
+        $("p").addClass("test");
+    });
+    $btn.eq(1).click(function () {
+        // console.log("add");
+        $("p").removeClass("test");
+    });
+    $btn.eq(2).click(function () {
+        // console.log("add");
+        $("p").toggleClass("test");
+    });
+
+
+
+</script>
+</body>
+</html>

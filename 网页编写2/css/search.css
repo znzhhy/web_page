@@ -1,0 +1,51 @@
+/*====con-left start====*/
+.middle .mid-con .con-left{
+    height:800px;
+    width:800px;
+    background: white;
+    float: left;
+    margin-top:30px;
+}
+/*====search start====*/
+.middle .mid-con .con-left .form{
+    /*background: white;*/
+    /*width:800px;*/
+    /*height:130px;*/
+    padding: 40px;
+    border-bottom:1px solid gray;
+}
+.middle .mid-con .con-left .form .text{
+    width:600px;
+    height:40px;
+    border-radius: 20px 0 0 20px;
+    border:1px solid gray;
+    font-size:20px;
+    text-indent: 1em;
+    border-right:none;
+}
+.middle .mid-con .con-left .form input{
+    /*outline:none;*/
+}
+.middle .mid-con .con-left .form .btn{
+    width:100px;
+    height:44px;
+    border-radius: 0 20px 20px 0 ;
+    border:1px solid red;
+    background: red;
+    margin-left:-5px;
+    vertical-align: bottom;
+    font-size: 20px;
+    color:white;
+}
+/*====search end====*/
+/*====con-left end====*/
+/*====con-right start====*/
+
+.middle .mid-con .con-right{
+    height:800px;
+    width:360px;
+    background: white;
+    float: right;
+    margin-top:30px;
+}
+/*====con-right end====*/

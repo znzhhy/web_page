@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            border: 10px solid red;
+            /*overflow: hidden;!*在纯浮动的页面下生效*!*/
+        }
+        .box div{
+            height:100px;
+            width:100px;
+        }
+        .left{
+            background: #9595fb;
+            float:left;
+        }
+        .right{
+            background: blueviolet;
+            float:right;
+        }
+        .clearfix::after{
+            display: block;
+            content:"";
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+        <!--<div></div>-->
+    </div>
+</body>
+</html>

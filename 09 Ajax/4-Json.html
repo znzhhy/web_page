@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //创建json对象
+    var usr={
+        "name":"feifei",
+        "age":18,
+        "hobby":"singing"
+    };
+    //json可读
+    console.log(usr.name);
+    //json可写
+    usr.name="周建昌";
+    console.log(usr.name);
+    //json数据遍历
+    for(var key in usr){
+        console.log(key+":"+usr[key]);
+    }
+    //json转字符串
+    var str=JSON.stringify(usr);
+    console.log(str);//'{"name":"周建昌","age":18,"hobby":"singing"}'
+    console.log(typeof str);//string
+
+    //字符串转化json
+    var obj=JSON.parse(str);
+    console.log(obj);//{name: "周建昌", age: 18, hobby: "singing"}
+    console.log(typeof obj);//object
+
+</script>
+</body>
+</html>

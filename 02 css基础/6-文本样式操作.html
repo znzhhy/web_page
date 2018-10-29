@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text</title>
+    <style>
+        .test{
+            /*首行缩进*/
+            text-indent:2em;
+        }
+        .test1{
+            width:400px;
+            background:slateblue;
+            /*上下居中*/
+            height:50px;
+            line-height: 50px;
+            /*左右居中*/
+            text-align: center;
+        }
+        div{
+            /*text-transform: uppercase;*/
+            /*text-transform: lowercase;*/
+            /*text-transform: capitalize;*/
+        }
+        a{
+            /*text-decoration: none;*/
+            /*text-decoration: underline;*/
+            /*text-decoration: line-through;*/
+            /*text-decoration: overline;*/
+            font-size:50px;
+            font-weight: bold;
+        }
+        #slh{
+            height:100px;
+            width:100px;
+            background: slateblue;
+            /*省略号缺一不可的*/
+            white-space: nowrap;/*不换行*/
+            overflow: hidden;/*超出div范围隐藏*/
+            text-overflow: ellipsis;/*文本超出部分用省略号显示*/
+        }
+    </style>
+</head>
+<body>
+    <h3>标题</h3>
+    <p class="test">红豆生南国，春来发几枝，愿君多采撷，此物最相思</p>
+    <p class="test1">红豆生南国，春来发几枝，愿君多采撷，此物最相思</p>
+    <div>hello world</div>
+    <a href="javascript:void(0);">哈哈</a>
+    <div id="slh">红豆生南国，春来发几枝，愿君多采撷，此物最相思</div>
+</body>
+</html>

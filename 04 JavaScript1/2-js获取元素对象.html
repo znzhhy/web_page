@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p class="test" id="test1">你好，同学</p>
+    <!--<p>你好，同学</p>-->
+    <input type="text" name="ff" value="haha">
+<script>
+    //获取对象的方法
+    //1.标签
+    var obj1=document.getElementsByTagName("p");//数组、列表
+    console.log(obj1[0]);
+    //2.class
+    var obj2=document.getElementsByClassName("test");
+    console.log(obj2[0]);
+    //3.id
+    var obj3=document.getElementById("test1");
+    console.log(obj3);
+    //4.css选择器
+    var obj4=document.querySelector("p");
+    var obj5=document.querySelector(".test");
+    var obj6=document.querySelector("#test1");
+    console.log(obj4);
+    console.log(obj5);
+    console.log(obj6);
+    //5.name
+    var inp=document.getElementsByName("ff");
+    console.log(inp[0]);
+    var val = inp[0].value;
+    console.log(val);
+</script>
+</body>
+</html>

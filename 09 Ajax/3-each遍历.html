@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+    var $objs=$("li");
+    //含参$.each($obj,function(i,obj){});
+    $.each($objs,function (i,obj) {//每循环一次i自增1，obj=$objs[i];
+        console.log($(obj).text());
+    });
+    $.each($objs,function () {//不带参数，每循环一次，this=$objs[i];
+        console.log("2:"+$(this).text());
+    })
+
+</script>
+</body>
+</html>

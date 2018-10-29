@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //提前声明：函数在执行前，所有的变量都已经进行了定义，但没有赋值：undefined
+    f();
+    function f() {
+        console.log(a);
+        var a="ok";
+        console.log(a);
+    }
+
+    /*
+    1.定义阶段：
+    function f +var a;--->a===>undefined;
+    2.执行阶段：
+    console.log(a);===>undefined
+    a="ok";
+    console.log(a);====>ok
+    */
+
+    function a() {
+      console.log("ok");
+    }
+    a();
+    function a() {
+        console.log("haha");
+    }
+    a();
+
+    /*
+    1.定义：
+    function a===>console.log("ok");
+    function a===>console.log("haha");
+    2.执行：
+    a();===》haha
+    a();===》haha
+    */
+
+    function a() {
+      console.log("ok");
+    }
+    a();
+    function a() {
+        console.log("haha");
+    }
+    a();
+    var a=function () {
+        console.log("feifei");
+    };
+    a();
+    /*
+    1.定义：
+    function a===>console.log("ok");
+    function a===>console.log("haha");
+    var a;变量
+    2.执行：
+    a();===》haha
+    a();===》haha
+    a=function () {
+        console.log("feifei");
+    };
+    a();===>feifei
+    */
+
+</script>
+</body>
+</html>

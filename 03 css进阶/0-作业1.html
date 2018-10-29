@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>regist</title>
+    <style>
+        body{
+            background: #e8dede;
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        .top{
+            height:70px;
+            background: black;
+            width:100%;
+        }
+        .middle{
+            height:800px;
+            width:100%;
+        }
+        .bottom{
+            height:210px;
+            width:100%;
+        }
+        .bottom .bot1{
+           height:140px;
+            width: 100%;
+            background: gray;
+        }
+        .bottom .bot2{
+            height:70px;
+            background: black;
+            width:100%;
+        }
+        .middle .mid-con{
+            height:580px;
+            width:480px;
+            background: white;
+            margin:30px auto;
+        }
+        .middle .mid-con .con-top{
+            height:50px;
+            line-height: 50px;
+            width:440px;
+            border-bottom: 1px solid gray;
+            margin-left: 20px;
+        }
+        .middle .mid-con .con-top h3{
+            float:left;
+            border-bottom: 3px solid blueviolet;
+            box-sizing: border-box;
+            height:50px;
+        }
+        .middle .mid-con .con-top a{
+            float:right;
+            text-decoration: none;
+        }
+        .middle .mid-con .regist-con{
+            margin-left: 20px;
+        }
+        .middle .mid-con .regist-con input{
+            height:50px;
+            width:440px;
+            margin-top: 20px;
+            font-size: 20px;
+            text-indent: 1em;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        .middle .mid-con .regist-con .inp{
+            width:300px;
+        }
+        .middle .mid-con .regist-con a{
+            display: inline-block;/*既具有行内标签的特点，同时可以设置宽高*/
+            border: 1px solid #9595fb;
+            height:50px;
+            width:130px;
+            line-height: 50px;
+            margin-left:10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .middle .mid-con .regist-con .btn{
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+   <div class="top"></div>
+   <div class="middle">
+       <div class="mid-con">
+           <div class="con-top">
+               <h3>请注册</h3>
+               <a href="javascript:void(0);">立即登录&gt;</a>
+           </div>
+           <div class="regist-con">
+               <form action="" method="post">
+                   <input type="text" name="phone" placeholder="请输入手机号"><br>
+                   <input class="inp" type="text" name="cookie" placeholder="请输入短信验证码"><a>发送验证码</a><br>
+                   <input type="text" name="usr" placeholder="请输入用户名"><br>
+                   <input type="password" name="psw" placeholder="请输入密码"><br>
+                   <input type="password" name="pswD" placeholder="请再次输入密码"><br>
+                   <input  class="inp" type="text" name="imgCookie" placeholder="请输入图形验证码"><a><img>此处为图形</a><br>
+                   <input class="btn" type="submit" value="注册">
+               </form>
+           </div>
+       </div>
+   </div>
+   <div class="bottom">
+       <div class="bot1"></div>
+       <div class="bot2"></div>
+   </div>
+</body>
+</html>

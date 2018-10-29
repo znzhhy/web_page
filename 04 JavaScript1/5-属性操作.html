@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            color:red;
+            font-size:50px;
+        }
+        .box1{
+            font-size:30px;
+            color:yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <p> 属性操作</p>
+<script>
+    //获取对象
+    var obj=document.querySelector("p");
+    //操作合法属性（增删改查）
+    //1.增
+    obj.className="box";
+    //2.改
+    obj.className="box1";/*有则改，无则增*/
+    //3.查（获取）
+    console.log(obj.className);
+    //4.删
+    obj.removeAttribute("class");
+
+    //操作自定义属性
+    //1.增
+    obj.setAttribute("k1","v1");
+    //2.改
+    obj.setAttribute("k1","upup");/*有则改，无则增*/
+    //3.查
+    console.log(obj.hasAttribute("k1"));
+    //4.删
+    obj.removeAttribute("k1");
+</script>
+</body>
+</html>

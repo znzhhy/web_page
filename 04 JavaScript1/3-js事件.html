@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script>-->
+    <!--window.onload=function () { -->
+        <!--var obj=document.querySelector(".box");-->
+        <!--console.log(obj);-->
+    <!--};-->
+    <!--</script>-->
+    <style>
+        div{
+            height:100px;
+            width:100px;
+            background: #9595fb;
+        }
+    </style>
+</head>
+<body>
+   <div class="box"></div>
+   <select>
+       <optgroup label="水果类">
+           <option>苹果</option>
+           <option>橘子</option>
+           <option>草莓</option>
+       </optgroup>
+       <optgroup label="水果类">
+           <option>苹果</option>
+           <option>橘子</option>
+           <option>草莓</option>
+       </optgroup>
+   </select>
+<script>
+    var obj=document.querySelector(".box");
+    console.log(obj);
+    //点击
+    obj.onclick=function (){
+        console.log("单击");
+        // obj.style.background="red";
+    };
+    //双击
+    obj.ondblclick=function(){
+        console.log("2");
+    };
+    //移入
+    obj.onmouseenter=function () {
+        obj.style.background="skyblue";
+        obj.innerText="hello";
+    };
+    //移出
+    obj.onmouseleave=function () {
+        obj.style.background="blue";
+    };
+    //窗口
+    window.onresize=function () {
+        console.log("窗口变化");
+    };
+    //下拉框
+    var obj1=document.querySelector("select");
+    obj1.onchange=function () {
+        console.log("下拉框内容改变了");
+    }
+</script>
+</body>
+</html>
